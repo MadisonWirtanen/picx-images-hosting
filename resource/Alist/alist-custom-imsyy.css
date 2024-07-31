@@ -12,7 +12,7 @@ body.hope-ui-light {
     --custom-backgroundColor-border: #eceff2;
     --custom-backgroundColor-transl: #f4f4f4bf;
     --custom-btnBackgroundColor: #eceff2;
-    background-image: url("https://cdn.imkk.uk/image/blog/xxxClaude_Monet,_Impression,_soleil_levant.webp");
+    background-image: url("https://cdn.003153.xyz/image/blog/xxxClaude_Monet,_Impression,_soleil_levant.webp");
 }
 body.hope-ui-dark {
     --custom-fontColor: #ecedee;
@@ -21,7 +21,7 @@ body.hope-ui-dark {
     --custom-backgroundColor-border: #2d3235;
     --custom-backgroundColor-transl: #080808f2;
     --custom-btnBackgroundColor: #3a3f42;
-    background-image: url("https://cdn.imkk.uk/image/blog/xxxxVan_Gogh_-_Starry_Night_-_Google_Art_Project.webp");
+    background-image: url("https://cdn.003153.xyz/image/blog/xxxxVan_Gogh_-_Starry_Night_-_Google_Art_Project.webp");
 }
 body #root .header {
     top: 0;

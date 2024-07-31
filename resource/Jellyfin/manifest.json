@@ -11,7 +11,7 @@
                 "checksum": "b01077ed8b477a2b94fd4c3e3ce063bb",
                 "changelog": "Compatible with Jellyfin 10.8.*",
                 "targetAbi": "10.8.0.0",
-                "sourceUrl": "https://x.imkk.uk/https://github.com/Libitum/jellyfin-plugin-douban/releases/download/v2.0.0/Jellyfin.Plugin.Douban.zip",
+                "sourceUrl": "https://x.003153.xyz/https://github.com/Libitum/jellyfin-plugin-douban/releases/download/v2.0.0/Jellyfin.Plugin.Douban.zip",
                 "timestamp": "2024-02-21T13:23:00Z",
                 "version": "2.0.0.0"
             }

@@ -63,7 +63,7 @@ const observeElementChanges = (selector, callbacks, isStop = true) => {
 const customFooter = (el) => {
   try {
     if (el !== null) {
-      el.innerHTML = `<div class="text"><div class="num">Themed by <a href="https://imsyy.top/" target="_blank">無名</a> | Powered by <a href="https://alist.nn.ci/zh/" target="_blank">Alist</a></i></span></div><div class="power">Copyright © 2020 - ${new Date().getFullYear()} <a href="https://www.imkk.uk/" target="_blank">imkk.uk</a></div></div></div>`;
+      el.innerHTML = `<div class="text"><div class="num">Themed by <a href="https://imsyy.top/" target="_blank">無名</a> | Powered by <a href="https://alist.nn.ci/zh/" target="_blank">Alist</a></i></span></div><div class="power">Copyright © 2020 - ${new Date().getFullYear()} <a href="https://www.003153.xyz/" target="_blank">知无涯者</a></div></div></div>`;
     }
   } catch (error) {
     console.error("页脚自定义出现问题：" + error);
@@ -86,7 +86,7 @@ const customLogo = (el) => {
       // 在原有元素的父元素内部前面插入新的父元素
       parentElement.insertBefore(newParentElement, parentElement.firstChild);
       // 设置新元素的内容
-      const newLogo = `<a href="/" class="left-all"><span class="name">Alist of KK</span></a>`;
+      const newLogo = `<a href="/" class="left-all"><span class="name">Alist</span></a>`;
       // 使用innerHTML设置新元素的内容
       newParentElement.innerHTML = newLogo;
     }
