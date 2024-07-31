@@ -1,0 +1,222 @@
+// 在线转换css https://bfotool.com/zh/scss-to-css
+body {
+  overflow-y: overlay !important;
+  overflow-x: hidden !important;
+  padding-right: 0 !important;
+  font-family: HarmonyOS_Regular, sans-serif !important;
+  background-attachment: fixed;
+  // 自定义明暗
+  &.hope-ui-light {
+    // 自定义颜色
+    --custom-fontColor: #11181c;
+    --custom-backgroundColor: rgb(255 255 255 / 50%);
+    --custom-backgroundColor-grey: #ffffff;
+    --custom-backgroundColor-border: #eceff2;
+    --custom-backgroundColor-transl: #f4f4f4bf;
+    --custom-btnBackgroundColor: #eceff2;
+    // 自定义背景图片
+    background-image: url("https://cdn.jsdelivr.net/gh/MadisonWirtanen/image-hosting-web-site@main/xxxClaude_Monet,_Impression,_soleil_levant.webp");
+  }
+  &.hope-ui-dark {
+    --custom-fontColor: #ecedee;
+    --custom-backgroundColor: rgb(32 36 37 / 70%);
+    --custom-backgroundColor-grey: #202425;
+    --custom-backgroundColor-border: #2d3235;
+    --custom-backgroundColor-transl: #080808f2;
+    --custom-btnBackgroundColor: #3a3f42;
+    background-image: url("https://cdn.jsdelivr.net/gh/MadisonWirtanen/image-hosting-web-site@main/xxxxVan_Gogh_-_Starry_Night_-_Google_Art_Project.webp");
+  }
+  #root {
+    // 页头
+    .header {
+      top: 0;
+      z-index: 999;
+      position: sticky;
+      height: 60px;
+      box-shadow: var(--hope-shadows-md);
+      background-color: var(--custom-backgroundColor);
+      backdrop-filter: blur(20px);
+      .header-left {
+        display: none;
+      }
+      .header-left-custom {
+        height: 100%;
+        .left-all {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .hope-image {
+            height: 30px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            &:hover {
+              transform: scale(1.08);
+            }
+            &:active {
+              transform: scale(1);
+            }
+          }
+          .name {
+            font-weight: bold;
+            font-size: 20px;
+          }
+        }
+      }
+      .header-right {
+        .hope-stack {
+          &.hope-c-PJLV {
+            height: 2rem;
+            .hope-icon {
+              height: 0.8em;
+              width: 0.8em;
+            }
+            .hope-kbd {
+              font-size: 0.6em;
+            }
+          }
+        }
+      }
+    }
+    // 内容
+    .body {
+      &.hope-stack {
+        // 面包屑导航
+        nav {
+          width: 100%;
+        }
+        // 文件列表
+        .obj-box {
+          width: 100%;
+          background-color: var(--custom-backgroundColor);
+        }
+        // MarkDown
+        .markdown-body {
+          font-family: HarmonyOS_Regular, sans-serif !important;
+          blockquote {
+            & > :last-child {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    // 文件列表白天透明
+    .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
+      background-color: var(--custom-backgroundColor);
+    }
+    // 文件列表夜间透明
+    .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
+      background-color: var(--custom-backgroundColor);
+    }
+    // Markdown白天透明
+    .hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {
+      background-color: var(--custom-backgroundColor);
+    }
+    // Markdown夜间透明
+    .hope-c-PJLV.hope-c-PJLV-iiuDLME-css {
+      background-color: var(--custom-backgroundColor);
+    }
+    // 页脚
+    .custom-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 12px;
+        a {
+          display: block;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 8px;
+        }
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        .num {
+          opacity: 0.8;
+          font-size: 14px;
+        }
+        .power {
+          margin: 2px 0;
+        }
+      }
+    }
+    // 评论区
+
+    // 页脚
+    .footer {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+  }
+  // 弹窗
+  .hope-modal__overlay {
+    backdrop-filter: blur(12px);
+  }
+  // 抽屉
+  .hope-drawer__overlay {
+    backdrop-filter: blur(12px);
+  }
+}
+
+// 图标
+.fa-solid {
+  margin: 0 6px;
+  &.fa-message {
+    margin: 0 6px 0 0;
+    transform: translateY(1px);
+  }
+}
+
+// 侧边栏
+.left-toolbar-box {
+  right: 0 !important;
+  min-height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  &:hover {
+    .left-toolbar,
+    svg:first-of-type {
+      background-color: var(--custom-backgroundColor) !important;
+      transform: translateX(0px) !important;
+    }
+  }
+  .left-toolbar,
+  svg:first-of-type {
+    background-color: var(--custom-backgroundColor) !important;
+    transform: translateX(70px) !important;
+    transition: transform 0.3s;
+    max-width: 40px;
+  }
+}
+
+// 禁止选中
+* {
+  user-select: none;
+}
+
+// 滚动条
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px !important;
+  background-color: #747474 !important;
+  &:hover {
+    background-color: #202425 !important;
+  }
+}

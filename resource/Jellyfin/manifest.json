@@ -1,0 +1,20 @@
+[
+    {
+        "category": "Metadata",
+        "guid": "e325b8d5-5f54-447f-a38a-a951b933d22c",
+        "name": "Douban",
+        "description": "Get Movie/TV information from Douban",
+        "owner": "Libitum",
+        "overview": "Manage Your Movie/TV by Douban",
+        "versions": [
+            {
+                "checksum": "b01077ed8b477a2b94fd4c3e3ce063bb",
+                "changelog": "Compatible with Jellyfin 10.8.*",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://x.imkk.uk/https://github.com/Libitum/jellyfin-plugin-douban/releases/download/v2.0.0/Jellyfin.Plugin.Douban.zip",
+                "timestamp": "2024-02-21T13:23:00Z",
+                "version": "2.0.0.0"
+            }
+        ]
+    }
+]
