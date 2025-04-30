@@ -1,0 +1,21 @@
+{
+	"request": [],
+	"sendHeader": [
+		{
+			"enable": true,
+			"name": "Github 我偏偏用中文（解除429Rate Limit）",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "github",
+			"exclude": "",
+			"group": "未分组",
+			"isFunction": false,
+			"action": {
+				"name": "accept-language",
+				"value": "CHINESE"
+			}
+		}
+	],
+	"receiveHeader": [],
+	"receiveBody": []
+}
